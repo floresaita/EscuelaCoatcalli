@@ -7,26 +7,26 @@
 
            .contenedor{
            background-color: #ffffff;
-            height: 300px;           
+            height: 200px;           
             border: solid;
   }
  
             #icono{
             position: absolute;
-            margin-top: 50px;
-            margin-left: 50px;
+
+            
   }
 
             #navBar{
             text-align: center;
             border: solid;
-            font: italic 30px fantasy;
+            font: italic 20px fantasy;
   }
             #leftMenu{           
-            background: green;
+            background: #FFFF00;
             float: left;
             width: 20%;
-            height: 200px;
+            height: 455px;
             border: solid;
   }
 
@@ -34,7 +34,7 @@
             background: red;
             float: right;
             width: 20%;
-            height: 200px;
+            height: 455px;
             border: solid;
   }
 
