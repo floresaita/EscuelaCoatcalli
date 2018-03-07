@@ -19,7 +19,7 @@
   }
             #content{     
             position: absolute;      
-            background: red;
+            background: pink;
             text-align: center;
             font-size: 20px;
             font-family: sans-serif;
@@ -38,25 +38,25 @@
             position: absolute;
   }
 
-            #leftMenu{           
+          /*  #leftMenu{           
             background: #FFFF00;
             float: left;
             width: 20%;
             height: 455px;
             border: solid;
-  }
+  }*/
             #navBar{
             text-align: center;
             border: solid;
             font: italic 20px fantasy;
-  }        
+  }      /*  
            #rigthMenu{            
             background: red;
             float: right;
             width: 20%;
             height: 455px;
             border: solid;
-  }
+  }*/
            #tabla{
             border: solid;
             width: 100%;
