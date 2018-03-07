@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<title>
+		Escuela Primaria "Coatcalli"
+	</title>
+	<link rel="icon" type="text/css" href="icon.ico">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+  	h3{
+  		text-align: center;
+  		font-size: 49px;
+  	}
+  	li{
+  		text-align: center;
+  		font-size: 30px;
+  		font-family: serif;
+  	}
+  </style>
+<body>
+  
+  <div id="header">
+ <!-- Titulo de la página-->
+   <section id="cabecera">
+
+</section>
+ <header>
+<div class="contenedor">
+      <div id="icono">      
+          <img src="LDEDM.png" >
+        </div>
+           <h1><span class="resaltado" id="titulo">Escuela Primaria "Coatcalli"</span></h1>
+      </div>
+
+<div id="navBar"> 
+      <nav>
+       
+  <div class="w3-bar  w3-card-4 w3-light-grey w3-center">
+  <a href="index.html" style="width:15%" class="w3-bar-item w3-button">Inicio</a>
+  <a href="Información.html" style="width:13%" class="w3-bar-item w3-button">Información</a>
+  <a href="#" style="width:13%" class="w3-bar-item w3-button">Eventos</a>
+  <a href="inscripcion.html" style="width:13%" class="w3-bar-item w3-button  w3-black" >Inscripción</a>
+  <a href="#" style="width:13%" class="w3-bar-item w3-button">Registro</a>
+  <a href="mapacoatcalli.html" style="width:16%" class="w3-bar-item w3-button">Ubicación</a>
+  <input style="width:14%" type="text" class="w3-bar-item w3-input" placeholder="Buscar..">
+  <a href="#"  class="w3-bar-item w3-button w3-light-grey">Ir</a>
+</div>
+</nav>
+</div>
+  <div>
+    
+  </div>
+</div>
+
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-red w3-card" style="width:250px">
+  <h5 class="w3-bar-item">Información</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'padretuto')">Padre/Tutor</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'alumnox')">Alumno</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'forma')">Formatos...</button>
+</div>
+
+<div style="margin-left:250px">
+  <div class="w3-padding"></div>
+
+  <div id="padretuto" class="w3-container city" style="display:none">
+    <h3>Documentacion del Padre/Tutor:</h3>
+    <li>Copia del INE del padre/Tutor.</li>
+    <li>Copia del Comprobante de Domicilio</li>
+    <li>Dos fotografias tamaño infantil</li>
+    <li>Cuota Voluntaria</li>
+  </div>
+
+  <div id="alumnox" class="w3-container city" style="display:none" >
+    <h3>Documentacion del Alumno:</h3>
+   <li>CURP vigente del alumno, en caso de no tenerlo ingresar a la siguiente <class="linkcurp"> <a href="https://consultas.curp.gob.mx/CurpSP/" style="color:red;">página.</a> </li>
+   <li>Dos fotografias tamaño infantil</li>
+   <li>Acta de Nacimiento</li>
+   <li>Certificado Medico</li>
+   <li>Cartilla de Vacunacion</li>
+
+    </div>
+
+
+  <div id="forma" class="w3-container city" style="display:none">
+    
+    <p><a href="" style="color: blue">Descargar...</a></p>
+    
+      </div>
+
+
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-blue";
+}
+</script>
+</body>
+</html>
