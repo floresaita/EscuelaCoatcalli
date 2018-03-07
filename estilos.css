@@ -62,3 +62,11 @@
             border: solid;
             width: 100%;
   }
+        #info{
+
+            background: #FFFF00;
+            float: left;
+            width: 20%;
+            height: 455px;
+            border: solid;
+        }

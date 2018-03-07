@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<title>
+		Escuela Primaria "Coatcalli"
+	</title>
+	<link rel="icon" type="text/css" href="icon.ico">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+<body>
+  
+  <div id="header">
+ <!-- Titulo de la página-->
+   <section id="cabecera">
+
+</section>
+ <header>
+<div class="contenedor">
+      <div id="icono">      
+          <img src="LDEDM.png" >
+        </div>
+           <h1><span class="resaltado" id="titulo">Escuela Primaria "Coatcalli"</span></h1>
+      </div>
+
+<div id="navBar"> 
+      <nav>
+       
+  <div class="w3-bar  w3-card-4 w3-light-grey w3-center">
+  <a href="index.html" style="width:15%" class="w3-bar-item w3-button">Inicio</a>
+  <a href="#" style="width:13%" class="w3-bar-item w3-button">Información</a>
+  <a href="#" style="width:13%" class="w3-bar-item w3-button">Eventos</a>
+  <a href="#" style="width:13%" class="w3-bar-item w3-button">Inscripción</a>
+  <a href="#" style="width:13%" class="w3-bar-item w3-button">Registro</a>
+  <a href="mapacoatcalli.html" style="width:16%" class="w3-bar-item w3-button">Ubicación</a>
+  <input style="width:14%" type="text" class="w3-bar-item w3-input" placeholder="Buscar..">
+  <a href="#"  class="w3-bar-item w3-button w3-light-grey">Ir</a>
+</div>
+</nav>
+</div>
+  <div>
+    
+  </div>
+</div>
+
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:250px">
+  <h5 class="w3-bar-item">Información</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Antecedentes')">Antecedentes</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Misión')">Misión</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Visión')">Visión</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Objetivo')">Objetivo</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Objetivo')">Valores</button>
+</div>
+
+<div style="margin-left:250px">
+  <div class="w3-padding">Acerca de la escuela</div>
+
+  <div id="Antecedentes" class="w3-container city" style="display:none">
+    <h2>Antecedentes Coatcalli</h2>
+    <p>No se que poner xD.</p>
+    <p>No se que poner xD .</p>
+  </div>
+
+  <div id="Misión" class="w3-container city" style="display:none" >
+   
+   <p> Somos una institución educativa que impulsa el desarrollo integral de nuestros alumnos potencializando sus capacidades, 
+   habilidades y actitudes, para contribuir a la formación de seres humanos con un pensamiento crítico, científico y humanista,
+    capaces de trabajar en equipo y trazar su proyecto de vida en el marco de un ambiente multicultural sustentado en los valores de honestidad, respeto, lealtad, solidaridad y responsabilidad social.</p> </div>
+    
+    
+  
+
+  <div id="Visión" class="w3-container city" style="display:none">
+    
+    <p>Ser una institución educativa en crecimiento sostenido y rentable, reconocida por su liderazgo educativo a nivel nacional e internacional, mediante la profesionalización de sus colaboradores y su vinculación con la sociedad, a través de un programa continuo de responsabilidad social.</p>
+    
+      </div>
+
+      <div id="Valores" class="w3-container city" style="display:none">
+    <p>Estamos convencidos que nuestra actitud es reflejo de nuestros valores. Por lo tanto se ha realizado un proceso de selección de valores en donde todos estuvimos representados y coincidimos que además de los valores personales de cada uno de nosotros los valores que nos identifican y nos distinguen son:</p>
+    <h2>Honestidad: </h2>
+    <p>Son acciones transparentes encaminadas al desarrollo ético, que nos permiten privilegiar el honor, la verdad y la justicia.</p>
+      </div>
+
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-blue";
+}
+</script>
+</body>
+</html>
