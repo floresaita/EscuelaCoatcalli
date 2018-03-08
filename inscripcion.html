@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
+  .ala
+  	{
+  		border: 1px solid black;
+  		font-family: Century Gothic;
+  		font-size: 20px;
+  		text-align:center;
+  		margin:0 auto;
+
+  	}
   	h3{
   		text-align: center;
   		font-size: 49px;
@@ -21,10 +30,12 @@
   	.lolita{
   		text-align: center;
   	}
-  	.yabe
-  	{
-  		table-layout: center;
+  	p{
+  		text-align: center;
+  		font-size: 28px;
   	}
+
+
   </style>
 <body>
   
@@ -64,7 +75,8 @@
 </div>
 
 <div class="w3-sidebar w3-bar-block w3-red w3-card" style="height:540px">
-  <h2 class="w3-bar-item w3-button tablink" onclick="openCity(event, 'general')">Informacion General</h2>
+  
+  <h4 class="w3-bar-item w3-button tablink" onclick="openCity(event, 'general')">Informacion</h4>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'padretuto')">Padre/Tutor</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'alumnox')">Alumno</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'forma')">Formatos...</button>
@@ -73,20 +85,44 @@
 <div style="margin-left:200px">
   <div class="w3-padding"></div>
   
-  <div id="general" class="w3-container city" style="display:none">
+  <div id="general" class="w3-container city" >
     <h3>Informacion General de la Inscripcion:</h3>
-    <p class="lolita">La escuela coatcalli hace el cordial aviso para la inscripcion de nuevo ingreso y/o reinscripcion los dias de reinscripcion son: </p>
-    <table class="yabe" style="border: 1px solid black">
+    <p class="lolita">La escuela Coatcalli hace el cordial aviso para la inscripcion de nuevo ingreso y/o reinscripcion los dias de reinscripcion son: </p>
+    
+    <table class="ala">
 		<tr>
 			<td style="border: 1px solid black">Letra</td>
 			<td style="border: 1px solid black">Dia</td>
 		</tr>
 		<tr>
-			<td>A, B, C</td>
-			<td style="background-color: #FFEBEE;"">KeyFrame-Largo</td>
+			<td>A, B, C, D</td>
+			<td style="background-color:">10-Junio</td>
 		</tr>
-	</table></div>
-    
+		<tr>
+		<td>E, F, G, H</td>
+		<td style="background-color: ">11-Junio</td>
+		</tr>
+		<tr>
+		<td>I, J, K, L</td>
+		<td style="background-color: ">12-Junio</td>
+		</tr>
+		<tr>
+		<td>M, N, Ñ, O</td>
+		<td style="background-color: ">16-Junio</td>
+		</tr>
+		<tr>
+		<td>P, Q, R, S, T</td>
+		<td style="background-color: ">17-Junio</td>
+		</tr>
+		<tr>
+		<td>U, V, W, X ,Y ,Z</td>
+		<td style="background-color: ">18-Junio</td>
+		</tr>
+		
+	</table>
+
+	<p>Los formatos deberan estar llenos en MAYUSCULAS con letra legible</p>
+   
   </div>
   <div id="padretuto" class="w3-container city" style="display:none">
     <h3>Documentacion del Padre/Tutor:</h3>
@@ -108,8 +144,7 @@
 
 
   <div id="forma" class="w3-container city" style="display:none">
-    
-    <p><a href="" style="color: blue">Descargar...</a></p>
+    <p><a href="" style="color: pink">Descargar...</a></p>
     
       </div>
 
