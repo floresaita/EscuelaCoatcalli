@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=10">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title>Inscripcion Coatcalli</title>
 	<link rel="icon" type="text/css" href="favicon.ico">
 	  <link rel="stylesheet" href="estilos.css">
@@ -17,40 +13,27 @@
 					text-align: center;
 
 				}
-				#prue{
-					width: 33%;
+				a {
+					margin-bottom: 1rem;
+					
 				}
-				h3{
-					font-family: serif;
+				.card{
 					text-align: center;
-					font-size: 40px;
 				}
-				h4{
-					text-align: center;
-					background-color: pink;
-				}
-				a{
-					font-size: 25px;
-				}
-				/* .prueba{
-					position: absolute;
-					text-align: right;
-				}*/
-
-			
 			</style>
 		</head>
-
-
 		<body>
+
+
 			<!--barra de navegacion-->
 			<!--logo y nombre-->
-			<div class="contenedor" style="height: 222px;">
+			<div class="contenedor" style="height: 220px;">
 		      <div id="icono">      
-		          <img src="logo.png  " >
+		          <img src="logo.png" >
 		        </div>
 		           <h1><span >Escuela Primaria "Coatcalli"</span></h1>
 		      </div>
+
 		      <nav class="navbar navbar-light" style="background-color: #FFFFFF;">
 		      	<a class="nav-item nav-link" href="index2.html">Inicio</a>
 		   		<a class="nav-item nav-link" href="informacion2.html">Información</a>
@@ -58,8 +41,8 @@
 		  		<a class="nav-item nav-link" href="inscripcion2.html">Inscripción</a>
 		  		<a class="nav-item nav-link" href="#">Registro</a>
 		  		<a class="nav-link" href="#">Ubicacion</a>
-		  	<nav class="navbar navbar-dark ">
-		  		<nav class="navbar navbar-light bg-pinkt">
+		  	<nav class="navbar navbar-dark bg-black">
+		  		<nav class="navbar navbar-light bg-light">
 		  			<form class="form-inline">
 		  		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -68,29 +51,24 @@
 </nav>
 		</nav>
         </div>
-       <div id="prue" class="btn-group-vertical"> 
-		<div class="container">
-   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Padre/Tutor</button>
 
- <div id="demo" class="collapse" class="prueba"><h4>El alan esta bien menso</h4></div></div>
-</div>
-   <div id="prue" class="btn-group-vertical"> 
-<div class="container">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demos">Alumno</button>
-  <div id="demos" class="collapse">enevo  </div>
-</div></div>
-  <div id="prue" class="btn-group-vertical"> 
-<div class="container" class="btn-outline-success"> 
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demosi" >Simple collapsible</button>
-  <div id="demosi" class="collapse">
-  	<h3>La gavi está bien mensa igual</h3>
-  	<h4> No es cierto</h4>
-  </div></div>
-</div>
+   <!--   <div class="btn-group-vertical">
+<button type="button" class="btn btn-secondary">Informacion</button>
+<button type="button" class="btn btn-success">Padre/Tutor</button>
+<button type="button" class="btn btn-success">Alumno</button>
+<button type="button" class="btn btn-success">Formatos</button>-->
+
+ <div class="btn-group-vertical">
+<div class="list-group">
+  <li class="list-group-item list-group-item-action list-group-item-dark">Informacion</li>
+  <h6 href="a" class="list-group-item list-group-item-action list-group-item-danger active">Padre/Tutor</h6>
+  <h6 href="#" class="list-group-item list-group-item-action list-group-item-danger">Alumno</h6>
+  <h6 href="#" class="list-group-item list-group-item-action list-group-item-danger">Formatos</h6>
 </div>
 
+</div>
       </li>
-      <div id="demo" class="collapse"><a>el texto al centro</a></div>
+  
     	<div id="footer">
 			<footer>
 
@@ -98,7 +76,16 @@
 			</footer>
 		</div >
   </div>
-
+ 
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
 
 </nav>
 
