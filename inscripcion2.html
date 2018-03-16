@@ -1,96 +1,213 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=10">
+	 <meta name="viewport" content="width=device-width, initial-scale=10">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=10">-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title>Inscripcion Coatcalli</title>
+<title>Inscripcion Coatcalli</title>
 	<link rel="icon" type="text/css" href="favicon.ico">
 	  <link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-			<style type="text/css">
-				#footer{
-				}
-				h6{
-					font-family: Centuary Gothic;
-					text-align: center;
 
-				}
+      <style type="text/css">
+
+  <style>
+  #footer{
+        }
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:100px;height:300px;color: #fff; background-color: gray;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: white;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #8AC7F1;}
+ /* #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}*/
+  .ala,p    {
+      border: 1px solid black;
+      font-family: Century Gothic;
+      font-size: 12px;
+      text-align:center;
+      margin:0 auto;
+
+    }
+
 				#prue{
 					width: 33%;
 				}
 				h3{
 					font-family: serif;
 					text-align: center;
-					font-size: 40px;
+					font-size: 12px;
 				}
 				h4{
 					text-align: center;
 					background-color: pink;
 				}
 				a{
-					font-size: 25px;
+					font-size: 12px;
 				}
-				/* .prueba{
-					position: absolute;
-					text-align: right;
-				}*/
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+<!--
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Padres/TUTOR</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+-->
 
-			
-			</style>
-		</head>
+  <div id="navbar-example">
+    <ul class="nav nav-tabs" role="tablist">
+   
+  <!--barra de navegacion-->
+      <!--logo y nombre-->
+      <div class="contenedor" style="height: 222px; width: 1600px">
+          <div id="icono">      
+              <img src="logo.png  " >
+            </div>
+               <h1><span >Escuela Primaria "Coatcalli"</span></h1>
+          </div>
+          <nav class="navbar navbar-light" style="background-color: black; width: 1600px">
+            <a class="nav-item nav-link" href="index2.html">Inicio</a>
+          <a class="nav-item nav-link" href="informacion2.html">Información</a>
+          <a class="nav-item nav-link" href="#">Eventos</a>
+          <a class="nav-item nav-link" href="inscripcion2.html">Inscripción</a>
+          <a class="nav-item nav-link" href="#">Registro</a>
+          <a class="nav-link" href="#">Ubicacion</a>
 
-
-		<body>
-			<!--barra de navegacion-->
-			<!--logo y nombre-->
-			<div class="contenedor" style="height: 222px;">
-		      <div id="icono">      
-		          <img src="logo.png  " >
-		        </div>
-		           <h1><span >Escuela Primaria "Coatcalli"</span></h1>
-		      </div>
-		      <nav class="navbar navbar-light" style="background-color: #FFFFFF;">
-		      	<a class="nav-item nav-link" href="index2.html">Inicio</a>
-		   		<a class="nav-item nav-link" href="informacion2.html">Información</a>
-		  		<a class="nav-item nav-link" href="#">Eventos</a>
-		  		<a class="nav-item nav-link" href="inscripcion2.html">Inscripción</a>
-		  		<a class="nav-item nav-link" href="#">Registro</a>
-		  		<a class="nav-link" href="#">Ubicacion</a>
-		  	<nav class="navbar navbar-dark ">
-		  		<nav class="navbar navbar-light bg-pinkt">
-		  			<form class="form-inline">
-		  		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <nav class="navbar navbar-dark ">
+          <nav class="navbar navbar-light bg-pinkt">
+            <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" arial-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
 </nav>
-		</nav>
+    </nav>
         </div>
+
+<div id="section1" class="container-fluid">
+  
+  <div id="general" class="w3-container city" >
+    <h3>Informacion General de la Inscripcion:</h3>
+    <p class="lolita">La escuela Coatcalli hace el cordial aviso para la inscripcion de nuevo ingreso y/o reinscripcion los dias de reinscripcion son: </p>
+
+    <table class="ala">
+    <tr>
+      <td style="border: 1px solid black">Letra</td>
+      <td style="border: 1px solid black">Dia</td>
+    </tr>
+    <tr>
+      <td>A, B, C, D</td>
+      <td style="background-color:">10-Junio</td>
+    </tr>
+    <tr>
+    <td>E, F, G, H</td>
+    <td style="background-color: ">11-Junio</td>
+    </tr>
+    <tr>
+    <td>I, J, K, L</td>
+    <td style="background-color: ">12-Junio</td>
+    </tr>
+    <tr>
+    <td>M, N, Ñ, O</td>
+    <td style="background-color: ">16-Junio</td>
+    </tr>
+    <tr>
+    <td>P, Q, R, S, T</td>
+    <td style="background-color: ">17-Junio</td>
+    </tr>
+    <tr>
+    <td>U, V, W, X ,Y ,Z</td>
+    <td style="background-color: ">18-Junio</td>
+    </tr>
+    
+  </table>
+
+  <p>Los formatos deberan estar llenos en MAYUSCULAS con letra legible</p>
+   
+</div>
+<div id="section2" class="container-fluid">
+  
        <div id="prue" class="btn-group-vertical"> 
-		<div class="container">
+    <div class="container">
    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Padre/Tutor</button>
 
- <div id="demo" class="collapse" class="prueba"><h4>El alan esta bien menso</h4></div></div>
+ <div id="demo" class="collapse" class="prueba">
+  <h3>Documentacion del Padre/Tutor:</h3>
+    <li>Copia del INE del padre/Tutor.</li>
+    <li>Copia del Comprobante de Domicilio</li>
+    <li>Dos fotografias tamaño infantil</li>
+    <li>Cuota Voluntaria</li>
+  
+</div>
+</div>
 </div>
    <div id="prue" class="btn-group-vertical"> 
 <div class="container">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demos">Alumno</button>
-  <div id="demos" class="collapse">enevo  </div>
+  <div id="demos" class="collapse"> <h3>Documentacion del Alumno:</h3>
+   <li>CURP vigente del alumno, en caso de no tenerlo ingresar a la siguiente <class="linkcurp"> <a href="https://consultas.curp.gob.mx/CurpSP/" style="color:red;">página.</a> </li>
+   <li>Dos fotografias tamaño infantil</li>
+   <li>Acta de Nacimiento</li>
+   <li>Certificado Medico</li>
+   <li>Cartilla de Vacunacion</li>  </div>
 </div></div>
   <div id="prue" class="btn-group-vertical"> 
 <div class="container" class="btn-outline-success"> 
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demosi" >Simple collapsible</button>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demosi" >DESCARGAR FORMATOS</button>
   <div id="demosi" class="collapse">
-  	<h3>La gavi está bien mensa igual</h3>
-  	<h4> No es cierto</h4>
+   <p><a href="" style="color: white">Descargar...</a></p>
   </div></div>
 </div>
+    </ul>
+  </div>
+
 </div>
 
       </li>
       <div id="demo" class="collapse"><a>el texto al centro</a></div>
+<div id="section3" class="container-fluid">
+
+
+</div>
+<!--<div id="section41" class="container-fluid">
+  <h1>Section 4 Submenu 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section42" class="container-fluid">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+-->
+ <div id="demo" class="collapse"><a>el texto al centro</a></div>
     	<div id="footer">
 			<footer>
 
@@ -98,9 +215,6 @@
 			</footer>
 		</div >
   </div>
-
-
-</nav>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
