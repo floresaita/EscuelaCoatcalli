@@ -3,12 +3,14 @@
             font-size: 70px;
             height: 350px;
             margin-top: 100px;
+
   }
 
            .contenedor{
            background-color: #ffffff;
             height: 200px;           
             border: solid;
+            background-color:#FFFF00; 
   }
 
             #cont{
@@ -55,15 +57,7 @@
             .nav-link{
            color: #ffffff;
            }
-      /*  
-           #rigthMenu{            
-            background: red;
-            float: right;
-            width: 20%;
-            height: 455px;
-            border: solid;
-  }*/
-          #parrafo{
+        #parrafo{
            text-align: center;
            font-family: sans-serif;
            color: red;
@@ -72,11 +66,17 @@
             border: solid;
             width: 100%;
   }
-        #info{
+        .form-group {
+          font-size: 18px;
+        }
 
-            background: #FFFF00;
-            float: left;
-            width: 20%;
-            height: 455px;
-            border: solid;
+        @media(max-width: 768px){
+          form{
+            width: 75%;
+          }
+        }
+        @media(max-width: 480px){
+          form{
+            width: 95%;
+          }
         }
