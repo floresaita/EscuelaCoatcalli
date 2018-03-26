@@ -9,7 +9,15 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
+  .ala
+  	{
+  		border: 1px solid black;
+  		font-family: Century Gothic;
+  		font-size: 20px;
+  		text-align:center;
+  		margin:0 auto;
 
+  	}
   	h3{
   		text-align: center;
   		font-size: 49px;
@@ -19,6 +27,14 @@
   		font-size: 30px;
   		font-family: serif;
   	}
+  	.lolita{
+  		text-align: center;
+  	}
+  	p{
+  		text-align: center;
+  		font-size: 28px;
+  	}
+
 
   </style>
 <body>
@@ -41,7 +57,9 @@
        
   <div class="w3-bar  w3-card-4 w3-light-grey w3-center">
   <a href="index.html" style="width:15%" class="w3-bar-item w3-button">Inicio</a>
-
+  <a href="informacion.html" style="width:13%" class="w3-bar-item w3-button">Información</a>
+  <a href="eventos.html" style="width:13%" class="w3-bar-item w3-button">Eventos</a>
+  <a href="inscripcion.html" style="width:13%" class="w3-bar-item w3-button">Inscripción</a>
   <a href="#" style="width:13%" class="w3-bar-item w3-button">Registro</a>
   <a href="mapacoatcalli.html" style="width:16%" class="w3-bar-item w3-button">Ubicación</a>
   <input style="width:14%" type="text" class="w3-bar-item w3-input" placeholder="Buscar..">
@@ -56,13 +74,56 @@
 
 </div>
 
-
+<div class="w3-sidebar w3-bar-block w3-red w3-card" style="height:540px">
+  
+  <h4 class="w3-bar-item w3-button tablink" onclick="openCity(event, 'general')">Informacion</h4>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'padretuto')">Padre/Tutor</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'alumnox')">Alumno</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'forma')">Formatos...</button>
 </div>
 
+<div style="margin-left:200px">
+  <div class="w3-padding"></div>
+  
+  <div id="general" class="w3-container city" >
+    <h3>Informacion General de la Inscripcion:</h3>
+    <p class="lolita">La escuela Coatcalli hace el cordial aviso para la inscripcion de nuevo ingreso y/o reinscripcion los dias de reinscripcion son: </p>
+    
+    <table class="ala">
+		<tr>
+			<td style="border: 1px solid black">Letra</td>
+			<td style="border: 1px solid black">Dia</td>
+		</tr>
+		<tr>
+			<td>A, B, C, D</td>
+			<td style="background-color:">10-Junio</td>
+		</tr>
+		<tr>
+		<td>E, F, G, H</td>
+		<td style="background-color: ">11-Junio</td>
+		</tr>
+		<tr>
+		<td>I, J, K, L</td>
+		<td style="background-color: ">12-Junio</td>
+		</tr>
+		<tr>
+		<td>M, N, Ñ, O</td>
+		<td style="background-color: ">16-Junio</td>
+		</tr>
+		<tr>
+		<td>P, Q, R, S, T</td>
+		<td style="background-color: ">17-Junio</td>
+		</tr>
+		<tr>
+		<td>U, V, W, X ,Y ,Z</td>
+		<td style="background-color: ">18-Junio</td>
+		</tr>
+		
+	</table>
 
+	<p>Los formatos deberan estar llenos en MAYUSCULAS con letra legible</p>
+   
+  </div>
   <div id="padretuto" class="w3-container city" style="display:none">
     <h3>Documentacion del Padre/Tutor:</h3>
     <li>Copia del INE del padre/Tutor.</li>
@@ -83,13 +144,17 @@
 
 
   <div id="forma" class="w3-container city" style="display:none">
-
+    <p><a href="" style="color: pink">Descargar...</a></p>
     
       </div>
 
 
 </div>
 
+<div id="footer">
+     <footer>
+       Email: coatcalli_vesp@gmail.com CCT: 15EPR4526B
+     </footer>
 <script>
 function openCity(evt, cityName) {
   var i, x, tablinks;
@@ -102,7 +167,7 @@ function openCity(evt, cityName) {
       tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
   }
   document.getElementById(cityName).style.display = "block";
-
+  evt.currentTarget.className += " w3-pink";
 }
 </script>
 </body>
