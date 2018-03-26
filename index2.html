@@ -3,26 +3,43 @@
 <html>
 <head>
 	<title>Escuela Primaria Coatcalli</title>
-	<link rel="icon" type="text/css" href="favicon.ico">
-	  <link rel="stylesheet" href="estilos.css">
+	<link rel="icon" type="text/css" href="img/favicon.ico">
+	  <link rel="stylesheet" href="css/estilos.css">
+	  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	 <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 			
 		</head>
+		<style >
+			@media (min-width: 576px) { ... }
+
+
+@media (min-width: 768px) { ... }
+
+
+@media (min-width: 992px) { ... }
+
+
+@media (min-width: 1200px) { ... }
+		</style>
 
 		<body>
+
+
 <!--barra de navegacion-->
 			
-			<div class="contenedor" style="height: 220px;">
-		      <div id="icono">      
-		           <img class="img-responsive" src="logo.png" alt="Chania"> 
-		        </div>
-		           <h1><span >Escuela Primaria "Coatcalli"</span></h1>
+			<div  class="contenedor">
+		    
+		           <h1>Escuela Primaria "Coatcalli"</h1>
 		      </div>		   
 
-<nav class="navbar navbar-dark bg-primary navbar-inverse nav-fill"">
+<nav class="navbar navbar-dark  navbar-expand-lg   navbar-expand-md  navbar-expand-sm bg-primary navbar-inverse nav-fill" class="col-xs-12 col-sm-6 col-md-8">
  <a class="nav-item nav-link active" href="">Inicio</a>
 		  <a class="nav-item nav-link" href="#">Información</a>
 		  <a class="nav-item nav-link" href="#">Eventos</a>
@@ -37,39 +54,109 @@
 			
 
 		<!--main content-->
-		<div class="container-fluid">
+<div class="container-fluid">
+	<br>
 			<div class="row">
 				<div class="col-4  content">
 					
 					<form>
 					  <div class="form-group row">
-					    <label for="staticEmail" class="col-sm-2 col-form-label" > Matricula </label>
+					    <label for="staticEmail" class="col-sm-2 col-form-label" > Usuario </label>
 					    <div class="col-sm-11">
-					      <input type="text"  class="form-control" id="staticEmail" placeholder="&#128272; Matricula" >
+					      <input type="text"  class="form-control" name="usuario" placeholder="&#128272; Matricula" >
 					    </div>
 					  </div>
 					  <div class="form-group row">
 					    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
 					    <div class="col-sm-11">
-					      <input type="password" class="form-control" id="inputPassword" placeholder="&#128272; Contraseña">
+					      <input type="password" class="form-control" name="contra" placeholder="&#128272; Contraseña">
 					    </div>
 					  </div>
-					 <p> <button type="submit" class="btn btn-primary btn-lg">Aceptar</button></p>
+					 <p> <button type="submit" name="aceptar" class="btn btn-primary btn-lg">Aceptar</button></p>
 					<!-- Button trigger modal -->
 				</form>
 		          <p><button type="button" class="btn btn-primary  btn-lg" data-toggle="modal" data-target="#exampleModal"> Registrarse</button></p>
 		         </div>	
-				<div class="col-7 content">
-					<img class="col-10" src="primaria.jpeg">
-				</div>	
-				<div class="col-0 content">
-					<div>
-		        
-		      </div>
-				</div>	
+				
+
+				<div class="col-6 content">
+
+
+					<div class="col-md-12">
+						<h1 class="animated zoomIn" style="text-align:center;">Bienvenidos</h1>
+				
+			<div id="carousel-1" class="carousel slide" data-ride="carousel">
+				<!-- Indicadores -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-1" data-slide-to="0"	class="active" ></li>
+					<li data-target="#carousel-1" data-slide-to="1"	></li>
+					<li data-target="#carousel-1" data-slide-to="2"	></li>
+				</ol>
+				<!-- contenedor de los slide -->
+				
+				<div class="carousel-inner" role="listbox">
+					<!-- #1 -->
+					<div class="item  active">
+						<img src="img/primaria.jpeg" class="img-responsive" style="width:822px; height:322px;" > <!-- style="width:822px;height:322px;" --> <!-- YA ME QUEDO CLARO POR QUE TODAS LAS IMAGENES MISMO TAMAÑO -->
+						<div class="carousel-caption">
+							 <!--<h3>Este es nuestro Slide #1</h3>
+							<p>Lorem ipsum dolor sit amet.</p>-->
+						</div>
+					</div>
+					<!-- #2 -->
+					<div class="item ">
+						<img src="img/patio.jpg" class="img-responsive" style="width:822px; height:322px;">
+						<div class="carousel-caption">
+							<!-- <h3>Este es nuestro Slide #2</h3>
+							<p>Lorem ipsum dolor sit amet.</p> -->
+						</div>
+					</div>
+					<!-- #3 -->
+					<div class="item">
+						<img src="img/cooperativa.jpg" class="img-responsive" style="width:822px; height:322px;">
+						<div class="carousel-caption">
+			   				<!-- <h3>Este es nuestro Slide #3</h3>
+							<p>Lorem ipsum dolor sit amet.</p> -->
+						</div>
+					</div>
+				</div>
+				<!-- Controles -->
+				<a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
 			</div>
+		</div>
+
 
 		</div>
+		<div class="col-2 content ">
+			<h1>Anuncios</h1>
+			<a href="http://www.becas.sep.gob.mx/beca/128/show" target="_blank">Becas</a></p>
+			<a href="http://seduc.edomex.gob.mx/becas_talentos_artisticos" target="_blank">Becas Artisticas</a></p>
+			<a href="http://seduc.edomex.gob.mx/becas_talentos_deportivos" target="_blank">Becas Deportivas</a></p>
+			<a href="http://edomex.gob.mx/sites/edomex.gob.mx/files/files/Calendario%20Escolar.pdf" target="_blank">Calendario escola</a></p>
+
+					
+				</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 		<!-- Modal -->
@@ -83,27 +170,9 @@
 		        </button>
 		      </div>
 		      <div class="modal-body">
-		        <div class="input-group mb-3">
-		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default">Nombre(s)</span>
-		  </div>
-		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-		</div>
 		<div class="input-group mb-3">
 		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default">Apellido Paterno</span>
-		  </div>
-		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-		</div>
-		<div class="input-group mb-3">
-		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default">Apellido Materno</span>
-		  </div>
-		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-		</div>
-		<div class="input-group mb-3">
-		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default">Matricula</span>
+		    <span class="input-group-text" id="inputGroup-sizing-default">Usuario</span>
 		  </div>
 		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 		</div>
@@ -113,17 +182,14 @@
 		  </div>
 		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 		</div>
-
-
-
-		      </div>
+		  </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-primary">Guardar</button>
 		      </div>
 		    </div>
 		  </div>
 		</div>
-
+		
 
 			<!-- Pie de página-->
 		<div id="footer">
@@ -146,6 +212,11 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 		<script src="jquery-3.2.1.min.js"></script>
+ 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 
 		</body>
 		</html>

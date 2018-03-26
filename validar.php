@@ -1,27 +1,46 @@
 <?php
-$usuario=$_POST['usuario'];
-$contraseña=$_POST['contraseña'];
+ session_start();
+  if (isset($_SESSION['usuario'])) {
+    header('Location: /php-login');
+  }
+  require 'database.php';
+  if (!empty($_POST['usuario']) && !empty($_POST['contraseña'])) {
+    $records = $conn->prepare('SELECT  usuario, contraseña FROM login WHERE usuario = :usuario');
+    $records->bindParam(':usuario', $_POST['usuario']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+    $message = '';
+    if (count($results) > 0 && password_verify($_POST['contraseña'], $results['contraseña'])) {
+      $_SESSION['user_id'] = $results['id'];
+      header("Location: /php-login");
+    } else {
+      $message = 'Sorry, those credentials do not match';
+    }
+  }
+?>
 
-//conectar a la base de datos
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <?php require 'partials/header.php' ?>
 
-$conexion= new mysqli("localhost", "root", "12345678", "usuarios");
-$consulta="SELECT * FROM login WHERE usuario='$usuario' and contraseña='$contraseña'";
-$resultado=mysqli_query($conexion, $consulta);
+    <?php if(!empty($message)): ?>
+      <p> <?= $message ?></p>
+    <?php endif; ?>
 
-//validacion 
+    <h1>Login</h1>
+    <span>or <a href="signup.php">SignUp</a></span>
 
-if ($conexion->connect_error) {
-	die("conexion fallida:" .$conexion->connect_error);
-}
-$sql = "SELECT * FROM login WHERE usuario='$usuario' and contraseña='$contraseña'";
-if ($conexion->query($sql) == TRUE) {
-	header("location:bienvenidos.html");
-	echo "se creo el usuario";
-} 
-else {
-	echo "error: " .$sql . "<br>" . $conexion->error;
-}
-
-$conexion->close();
-
-
+    <form action="login.php" method="POST">
+      <input name="email" type="text" placeholder="Enter your email">
+      <input name="password" type="password" placeholder="Enter your Password">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
