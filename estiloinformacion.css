@@ -1,0 +1,84 @@
+#encabezado{
+	
+	font-weight: 700;
+	font-style: normal;
+	text-align: justify;
+	font-variant: small-caps;
+	text-indent: 14px;
+	letter-spacing: -1px;
+	word-wrap: 5px;
+	text-align: center;
+    font-family: cursive;
+
+           
+}
+#ejemplo{
+	float: left;
+	margin: 0 10px 10px 0;
+	position: left; 
+	width: 300px;
+	height: 250px;
+}
+#texto{
+
+	font-style: normal;
+	font-variant: small-caps;
+    font-family: sans-serif;
+}
+#encabezado1{
+	
+	font-weight: 7000;
+	font-style: normal;
+	text-align: justify;
+	font-variant: small-caps;
+	text-align: center;
+    font-family: cursive;
+
+         }
+         #navBar{
+            text-align: center;
+            border: solid;
+            font: italic 20px fantasy;
+  }
+   a{
+	  	 	font-size: 20px;
+	  	 }
+		.ala{
+			border: 1px solid black;
+			font-family: Century Gothic;
+			font-size: 17px;
+			text-align:center;
+			margin:0 auto;
+		}
+	    body{
+	    	position: relative; 
+	    }
+	    #losbotons{
+	    	font-size: 25px;
+	    }
+   	  	 
+   	  	 h2{
+   	  	 	font-family: serif;
+   	  	 	text-align: center;
+   	  	 	}
+		h4{
+			text-align: center;
+			background-color: pink;
+		}
+		li{
+			text-align: center;
+		}
+		
+		p{
+			text-align: center;
+		}
+		#prue{
+			width: 33%;
+		}
+      	 #section1 {
+      	 	padding-top:50px;
+      	 	height:300px;
+      	 	color: #fff;
+      	 	background-color: #00897B;
+      	 }
+ 		
