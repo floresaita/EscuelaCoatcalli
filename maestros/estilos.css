@@ -2,6 +2,11 @@
             font-family: sans-serif;
             font-size: 14px;
            }
+           body{
+            text-align: center;
+            font-family: sans-serif;
+            margin: 0; 
+           }
 
 
             .contenedor h1{
@@ -48,15 +53,19 @@
             #icono{
             position: absolute;
   }
+            .img {
+            border-radius: 20px;
+            background: white;  
+            width:422px; 
+            height:422px;" 
+            }
+            .menu{
+              font-family: sans-serif;
+              font-size: 18px;
 
-          /*  #leftMenu{           
-            background: #FFFF00;
-            float: left;
-            width: 20%;
-            height: 455px;
-            border: solid;
-  }*/
-            .navbar{
+            }
+           
+           .navbar{
             font-family: sans-serif;
             font-size: 20px;
            
@@ -104,4 +113,14 @@
 .letra{
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 50px;
+}
+
+
+
+@keyframes modal{
+  100%{
+    visibility:visible;
+    opacity: 1;
+
+  }
 }
