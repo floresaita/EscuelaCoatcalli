@@ -35,50 +35,57 @@
     font-family: cursive;
 
          }
-         #navBar{
-            text-align: center;
-            border: solid;
-            font: italic 20px fantasy;
-  }
-   a{
-	  	 	font-size: 20px;
-	  	 }
-		.ala{
-			border: 1px solid black;
-			font-family: Century Gothic;
-			font-size: 17px;
-			text-align:center;
-			margin:0 auto;
-		}
-	    body{
-	    	position: relative; 
-	    }
-	    #losbotons{
-	    	font-size: 25px;
-	    }
-   	  	 
-   	  	 h2{
-   	  	 	font-family: serif;
-   	  	 	text-align: center;
-   	  	 	}
-		h4{
-			text-align: center;
-			background-color: pink;
-		}
-		li{
-			text-align: center;
-		}
-		
-		p{
-			text-align: center;
-		}
-		#prue{
-			width: 33%;
-		}
-      	 #section1 {
-      	 	padding-top:50px;
-      	 	height:300px;
-      	 	color: #fff;
-      	 	background-color: #00897B;
       	 }
- 		
+ 		a{
+        font-size: 20px;
+       }
+    .ala{
+      border: 1px solid black;
+      font-family: Century Gothic;
+      font-size: 17px;
+      text-align:center;
+      margin:0 auto;
+    }
+      body{
+        position: relative; 
+      }
+      #losbotons{
+        font-size: 25px;
+      }
+         #footer
+         {
+          }
+         h2{
+          font-family: serif;
+          text-align: center;
+          }
+    h4{
+      text-align: center;
+      background-color: pink;
+    }
+    li{
+      text-align: center;
+    }
+    #lolita{
+      text-align: center;
+      font-size: 20px; 
+      font-family: Arial;
+    }
+    p{
+      text-align: center;
+    }
+    #prue{
+      width: 33%;
+    }
+         #section1 {
+          padding-top:50px;
+          height:300px;
+          color: #fff;
+          background-color: #00897B;
+         }
+     #section3 {
+      padding-top:50px;
+      height:500px;
+      color: #fff; 
+      background-color: gray;
+     }
