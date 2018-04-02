@@ -18,57 +18,48 @@
 
 
     <body>
-
 <!--barra de navegacion-->
+
       
       <div  class="container-fluid principal ">
-        <div class="row">
-          <div class="col-md-10 tit">
-            <h1 class="text-center">Escuela Primaria "Coatcalli"</h1>
+          <div class="col-12 tit">
+            <h1 class="text-center">Escuela Primaria "Coatcalli"</h1>       
+               </div>
           </div>
+
+
+             <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index2.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inscripcion2.html">Inscripcion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loginmaestros.php">Maestros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ubiboots.html">Ubicacion</a>
+                </li>
+               </ul>
         </div>
-        
-               
-          </div>
+    </div>
 
-
-              <nav class="navbar navbar-dark  navbar-expand-lg   bg-primary justify-content-between " class="navbar-inverse navbar-fill">
-          
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active nav-link " >
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item nav-link ">
-        <a class="nav-link" href="#">Informacion</a>
-      </li>
-      <li class="nav-item nav-link ">
-        <a class="nav-link" href="eventos.html">Eventos</a>
-      </li>
-      <li class="nav-item nav-link ">
-        <a class="nav-link" href="inscripcion2.html">Inscripcion</a>
-      </li>
-       <li class="nav-item nav-link ">
-        <a class="nav-link" href="registro.html">Ingresar</a>
-      </li>
-       <li class="nav-item nav-link ">
-        <a class="nav-link" href="ubiboots.html">Ubicacion</a>
-      </li>
-    
-    </ul>
-    <nav class="navbar  justify-content-between">
-
-      <form class="form-inline ">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
-    </form>
 </nav>
-  </div>
-</nav>
+</div>
+
 
 
 
@@ -84,7 +75,37 @@
         <h1 style="text-align:center;" >Eventos</h1>
         <p class="parrafo" style="text-align:justify">En la escuela primaria "Coatcalli",  se llevan a cabo eventos alusivos a fechas conmemorativas, representandolas con actividades culturales como lo es el baile principalmente, así mismo estos eventos cuentan con el apoyo del <span>Director Fabricio Fabian Vargas Oliva</span>, quien representa esta institución.</p>  
         <p class="parrafo" style="text-align:justify">Cabe mencionar, que la recaudación de fondos económicos que se adquieren por parte de los padres y demás personas interesadas en hacerse partícipes de tan agradables eventos, ayudan a mejorar el inmueble y moviliario del plantel, con el fin de brindar un ambiente de calidad a los alumnos.</p>
-
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" class="img-fluid" alt="Responsive image" src="img/dif11.jpeg" alt="First slide" width="100px" height="400px">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" class="img-fluid" alt="Responsive image" src="img/dif12.jpeg" alt="Second slide" width="100px" height="400px">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" class="img-fluid" alt="Responsive image" src="img/dif13.jpeg" alt="Third slide" width="100px" height="400px">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <br>
+        <p>*por respeto se taparon las caras de los niños</p>
+        <br>
+        <br>
+        <br>
 
       </div>
       <div class="col-2">
@@ -100,5 +121,15 @@
        Email: coatcalli_vesp@gmail.com CCT: 15EPR4526B
      </footer>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
 </body>
 </html>
