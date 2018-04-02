@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+.container {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  position: relative;
+  margin: 25px auto;
+  width: 900px;
+  font-size: 30px;
+  text-align: center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+span {
+  display: block;
+}
+
+.line-3 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 70px 0 0;
+  position: relative;
+  letter-spacing: 6px;
+}
+.line-3:before, .line-3:after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+.line-3:before {
+  margin: 7px 0 0 -60px;
+}
+.line-3:after {
+  margin: 7px 0 0 10px;
+}
