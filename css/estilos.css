@@ -89,7 +89,10 @@
           }
         }
 
-
+.img{
+  width: 500px;
+  height: 450px;
+}
 
 .letra{
   font-family: 'Montserrat Alternates', sans-serif;
