@@ -17,59 +17,46 @@
 	
 
 		<body>
-
-
 <!--barra de navegacion-->
-			
-			<div  class="container-fluid principal ">
-				<div class="row">
-					<div class="col-md-10 tit">
-						<h1 class="text-center">Escuela Primaria "Coatcalli"</h1>
-					</div>
-					
-				</div>
-		    
-		           
-		      </div>
+      
+      <div  class="container-fluid principal ">
+          <div class="col-12 tit">
+            <h1 class="text-center">Escuela Primaria "Coatcalli"</h1>       
+               </div>
+          </div>
 
 
-		      		<nav class="navbar navbar-dark  navbar-expand-lg   bg-primary justify-content-between " class="navbar-inverse navbar-fill">
-		      
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active nav-link " >
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item nav-link ">
-        <a class="nav-link" href="#">Informacion</a>
-      </li>
-      <li class="nav-item nav-link ">
-        <a class="nav-link" href="eventos.html">Eventos</a>
-      </li>
-      <li class="nav-item nav-link ">
-        <a class="nav-link" href="inscripcion2.html">Inscripcion</a>
-      </li>
-       <li class="nav-item nav-link ">
-        <a class="nav-link" href="registro.html">Ingresar</a>
-      </li>
-       <li class="nav-item nav-link ">
-        <a class="nav-link" href="ubiboots.html">Ubicacion</a>
-      </li>
-    
-    </ul>
-    <nav class="navbar  justify-content-between">
-
-      <form class="form-inline ">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-      <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
+             <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inscripcion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loginmaestros.php">Maestros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ubicacion</a>
+                </li>
+               </ul>
+        </div>
+    </div>
 </nav>
-  </div>
-</nav>
+</div>
+
 
 
 
@@ -136,6 +123,8 @@
 				  </a>
 				</div>
 				<br>
+				 <p id="frase">La clave del éxito es seguir creciendo en todas las áreas de la vida: mental, emocional, espiritual y físicamente.-Julius Erving.</p>
+        <br>
 				<br>
 				<br>
 			</div>
@@ -149,7 +138,7 @@
 			<a href="http://seduc.edomex.gob.mx/becas_talentos_artisticos" target="_blank">Becas Artisticas</a></p>
 			<a href="http://seduc.edomex.gob.mx/becas_talentos_deportivos" target="_blank">Becas Deportivas</a></p>
 			<a href="http://edomex.gob.mx/sites/edomex.gob.mx/files/files/Calendario%20Escolar.pdf" target="_blank">Calendario escola</a></p>
-			<p>La clave del éxito es seguir creciendo en todas las áreas de la vida: mental, emocional, espiritual y físicamente.-Julius Erving.</p>
+			
 			</div>
 		</div>
 	</div>
@@ -170,31 +159,37 @@
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
-		      <form class="signup-form" action="includes/signup.inc.php" method="POST">
+		      <form action="../login/registro.php" method="POST">
 		      <div class="modal-body">
 		      	<div class="input-group mb-3">
 		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default"  >Nombre(s)</span>
+		    <span class="input-group-text" id="inputGroup-sizing-default"  >Correo</span>
 		  </div>
-		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="first">
+		  <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="correo">
 		</div>
 		  <div class="input-group mb-3">
 		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default">Apellidos</span>
+		    <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
 		  </div>
-		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="last">
+		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="password">
 		</div>
 		<div class="input-group mb-3">
 		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+		    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
 		  </div>
-		  <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="email">
+		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="nombre">
 		</div>
 		<div class="input-group mb-3">
 		  <div class="input-group-prepend">
-		    <span class="input-group-text" id="inputGroup-sizing-default">Contraseña</span>
+		    <span class="input-group-text" id="inputGroup-sizing-default">Edad</span>
 		  </div>
-		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="pwd">
+		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="edd">
+		</div>
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+		    <span class="input-group-text" id="inputGroup-sizing-default">Genero</span>
+		  </div>
+		  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="genero">
 		</div>
 		  </div>
 		      <div class="modal-footer">
@@ -203,7 +198,7 @@
 		    </form>     
 
 		    </div>
-		   
+		   </div>
 		 
 		</div><!--cierre de modal-->
 	
